@@ -67,7 +67,8 @@ export default function InterestedStudents({ registeredUsers, onClose }) {
             <div className="space-y-3">
               {students.map(student => (
                 <div key={student.id}
-                  className="flex items-center gap-3 bg-gray-50 rounded-xl p-3 hover:bg-purple-50 transition-all">
+                    onClick={() => window.location.href = `/profile/${student.id}`}
+                    className="flex items-center gap-3 bg-gray-50 rounded-xl p-3 hover:bg-purple-50 transition-all cursor-pointer">
 
                   <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
                     {student.name ? student.name.charAt(0).toUpperCase() : "?"}

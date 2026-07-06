@@ -9,6 +9,7 @@ import AddEvent from "./pages/AddEvent"
 import MyEvents from "./pages/MyEvents"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Profile from "./pages/Profile"
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/myevents" element={<MyEvents />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/profile/:id" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
