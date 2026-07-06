@@ -31,6 +31,12 @@ export default function Navbar() {
                 My Events
               </a>
               <a
+                href={`/profile/${user.uid}`}
+                className="text-sm text-gray-600 font-medium hover:text-purple-600"
+              >
+                My Profile
+              </a>
+              <a
                 href="/addevent"
                 className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-purple-700"
               >
